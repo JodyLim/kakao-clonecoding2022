@@ -1,50 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;1,200;1,300;1,400&display=swap');
+
 @import 'reset.css';
-@import 'status-bar.css';
 @import 'variables.css';
 
+/*componets*/
+@import 'components/status-bar.css';
+@import 'components/nav-bar.css';
+@import 'components/screen-header.css';
+@import 'components/user-component.css';
+@import 'components/badge.css';
+
+/*Screens*/
+@import 'screens/login.css';
+@import 'screens/friends.css';
+@import 'screens/find.css';
+
 body {
+  color: #2e363e;
   font-family: 'Noto Sans', sans-serif;
   font-family: 'Noto Sans KR', sans-serif;
 }
 
-.welcome-header {
-  margin: 90px 0px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-weight: 400;
-}
-
-.welcome-header__title {
-  margin-bottom: 20px;
-  font-size: 25px;
-}
-
-.welcome-header__text {
-  width: 60%;
-  opacity: 0.7;
-}
-#login-form {
-  display: flex;
-  flex-direction: column;
-  margin: 0px 30px;
-}
-
-#login-form input {
-  border: none;
-  padding: 15px 0px;
-  font-size: 18px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  margin-bottom: 25px;
-  transition: border-color;
-}
-
-#login-form input::placeholder {
-  color: rgba(0, 0, 0, 0.4);
-}
-
-#login-form input:focus {
-  border-color: var(--yellow);
+.main-screen{
+  padding: 0px var(--horizontal-space);
 }

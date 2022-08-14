@@ -1,9 +1,16 @@
 .status-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  /*background-color: yellow;*/
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: yellow;
   padding: 3px 5px;
+
+
+  box-sizing: border-box;
 }
 
 .status-bar__column {
